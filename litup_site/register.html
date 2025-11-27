@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lit-up | Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="login-body">
+    <main class="login-main">
+      <div class="login-card">
+        <h1 class="login-title">Register</h1>
+
+        <form id="register-form" class="login-form">
+          <div class="login-field">
+            <label for="reg-email">Email</label>
+            <div class="login-input-wrapper">
+              <i class="ri-mail-line"></i>
+              <input id="reg-email" type="email" required />
+            </div>
+          </div>
+
+          <div class="login-field">
+            <label for="reg-password">Password</label>
+            <div class="login-input-wrapper">
+              <i class="ri-lock-line"></i>
+              <input id="reg-password" type="password" required />
+            </div>
+          </div>
+
+          <div class="login-field">
+            <label for="reg-phone">Phone Number</label>
+            <div class="login-input-wrapper">
+              <i class="ri-phone-line"></i>
+              <input id="reg-phone" type="tel" required />
+            </div>
+          </div>
+
+          <div class="login-field">
+            <label for="reg-address">Delivery Address</label>
+            <div class="login-input-wrapper">
+              <i class="ri-home-4-line"></i>
+              <input id="reg-address" type="text" required />
+            </div>
+          </div>
+
+          <p id="reg-error" class="login-error"></p>
+
+          <button class="login-btn" type="submit">Create Account</button>
+
+          <a href="login.html" class="login-back">
+            <i class="ri-arrow-left-line"></i> Back to login
+          </a>
+        </form>
+      </div>
+    </main>
+
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/register.js"></script>
+  </body>
+</html>

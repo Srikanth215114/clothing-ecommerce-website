@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lit-up | Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="admin-body">
+    <header class="admin-header">
+      <div class="admin-header__left">
+        <a href="../index.html" class="admin-logo">lit-up</a>
+        <span class="admin-tag">admin panel</span>
+      </div>
+      <div class="admin-header__right">
+        <button id="admin-logout" class="admin-logout-btn">
+          <i class="ri-logout-box-line"></i> Logout
+        </button>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <section class="admin-card">
+        <div class="admin-card__header">
+          <h2>User orders</h2>
+          <div class="admin-meta">
+            <span>Total users: <strong id="admin-total-users">0</strong></span>
+            <span>Total orders: <strong id="admin-total-orders">0</strong></span>
+          </div>
+        </div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>User email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Registered</th>
+                <th>Total orders</th>
+                <th>Total spent (₹)</th>
+                <th>Order history</th>
+              </tr>
+            </thead>
+            <tbody id="admin-users-body">
+              <!-- rows injected by JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="admin-card__footer">
+          <button id="admin-clear-orders" class="admin-clear-btn">
+            <i class="ri-delete-bin-6-line"></i>
+            Clear all orders
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/admin.js"></script>
+  </body>
+</html>

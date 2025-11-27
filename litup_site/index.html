@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
+    />
+
+    <!--=============== SWIPER CSS (CDN) ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>lit-up</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">lit-up</a>
+
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a href="#men-section" class="nav__link">MEN</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">WOMEN</a>
+            </li>
+          </ul>
+          <!--close button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <!-- SEARCH -->
+          <div class="nav__search">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search products..."
+            />
+            <button id="search-btn" class="nav__icon-btn" aria-label="Search">
+              <i class="ri-search-line"></i>
+            </button>
+          </div>
+
+          <!-- USER ACCOUNT ICON -->
+          <a href="login.html" class="nav__icon-btn" id="account-link" aria-label="Account">
+            <i class="ri-user-line"></i>
+          </a>
+
+          <!-- WISHLIST ICON -->
+          <button class="nav__icon-btn" aria-label="Wishlist">
+            <i class="ri-heart-3-line"></i>
+          </button>
+
+          <!-- CART ICON -->
+          <button class="nav__icon-btn" id="cart-btn" aria-label="Cart">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="cart__count" id="cart-count">0</span>
+          </button>
+
+          <!--toggle button-->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+        <div class="home__container container">
+          <div class="home__content">
+            <div class="home__circle">
+              <div class="home__subcircle"></div>
+              <h1 class="home__title">clothings</h1>
+            </div>
+
+            <div class="home__swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/clothing-1.png"
+                    alt="zoro tshirt"
+                    class="home__img"
+                  />
+
+                  <h2 class="home__product">zoro tshirt</h2>
+                  <h3 class="home__price">₹799</h3>
+                  <button
+                    class="home__add-btn"
+                    data-product="zoro tshirt"
+                    data-price="799"
+                  >
+                    Add to cart
+                  </button>
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/clothing-5.png"
+                    alt="sanji tshirt"
+                    class="home__img"
+                  />
+
+                  <h2 class="home__product">sanji tshirt</h2>
+                  <h3 class="home__price">₹799</h3>
+                  <button
+                    class="home__add-btn"
+                    data-product="sanji tshirt"
+                    data-price="799"
+                  >
+                    Add to cart
+                  </button>
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/clothing-2.png"
+                    alt="luffy"
+                    class="home__img"
+                  />
+
+                  <h2 class="home__product">luffy</h2>
+                  <h3 class="home__price">₹799</h3>
+                  <button
+                    class="home__add-btn"
+                    data-product="luffy"
+                    data-price="799"
+                  >
+                    Add to cart
+                  </button>
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/clothing-3.png"
+                    alt="shanks"
+                    class="home__img"
+                  />
+
+                  <h2 class="home__product">shanks</h2>
+                  <h3 class="home__price">₹799</h3>
+                  <button
+                    class="home__add-btn"
+                    data-product="shanks"
+                    data-price="799"
+                  >
+                    Add to cart
+                  </button>
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/clothing-4.png"
+                    alt="gol d roger"
+                    class="home__img"
+                  />
+
+                  <h2 class="home__product">gol d roger</h2>
+                  <h3 class="home__price">₹799</h3>
+                  <button
+                    class="home__add-btn"
+                    data-product="gol d roger"
+                    data-price="799"
+                  >
+                    Add to cart
+                  </button>
+                </article>
+              </div>
+            </div>
+
+            <!--navigation buttons -->
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </div>
+
+          <footer class="home__footer">
+            <div class="home__languages">EN</div>
+
+            <div class="home__social">
+              <a
+                href="https://instagram.com/iblamesrix"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+
+              <a
+                href="https://instagram.com/iblamesrix"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+          </footer>
+        </div>
+      </section>
+
+      <!--==================== MEN COLUMN / SECTION ====================-->
+      <section class="men" id="men-section">
+        <div class="container men__container">
+          <h2 class="men__title">Men collection</h2>
+          <div class="men__grid">
+            <div class="men__card">
+              <img src="assets/img/clothing-1.png" alt="" class="men__img" />
+              <h3 class="men__name">zoro tshirt</h3>
+              <span class="men__price">₹799</span>
+            </div>
+            <div class="men__card">
+              <img src="assets/img/clothing-5.png" alt="" class="men__img" />
+              <h3 class="men__name">sanji tshirt</h3>
+              <span class="men__price">₹799</span>
+            </div>
+            <div class="men__card">
+              <img src="assets/img/clothing-2.png" alt="" class="men__img" />
+              <h3 class="men__name">luffy</h3>
+              <span class="men__price">₹799</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== CART PANEL ====================-->
+    <div class="cart" id="cart">
+      <div class="cart__overlay" id="cart-overlay"></div>
+      <div class="cart__panel">
+        <div class="cart__header">
+          <h2>Cart</h2>
+          <button class="cart__close" id="cart-close">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <div class="cart__items" id="cart-items">
+          <!-- items are injected by JS -->
+        </div>
+
+        <div class="cart__footer">
+          <span class="cart__total-label">
+            Total: ₹<span id="cart-total">0</span>
+          </span>
+          <button class="cart__checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!--=============== SCROLLREVEAL (CDN) ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== SWIPER JS (CDN) ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== AUTH & MAIN JS ===============-->
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

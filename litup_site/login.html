@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lit-up | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="login-body">
+    <main class="login-main">
+      <div class="login-card">
+        <h1 class="login-title">Login</h1>
+
+        <form id="login-form" class="login-form">
+          <div class="login-field">
+            <label for="email">Email</label>
+            <div class="login-input-wrapper">
+              <i class="ri-mail-line"></i>
+              <input id="email" type="email" required />
+            </div>
+          </div>
+
+          <div class="login-field">
+            <label for="password">Password</label>
+            <div class="login-input-wrapper">
+              <i class="ri-lock-line"></i>
+              <input id="password" type="password" required />
+            </div>
+          </div>
+
+          <p id="error-msg" class="login-error"></p>
+
+          <button class="login-btn" type="submit">Login</button>
+
+          <a href="register.html" class="login-back">
+            <i class="ri-user-add-line"></i> Create an account
+          </a>
+
+          <a href="index.html" class="login-back">
+            <i class="ri-arrow-left-line"></i> Back to store
+          </a>
+        </form>
+      </div>
+    </main>
+
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>
