@@ -1,1 +1,5 @@
 ![home page](https://github.com/user-attachments/assets/49b5b962-1266-4a6a-a02b-d1b57393c451)
+![login page](https://github.com/user-attachments/assets/83470d7e-76d2-4792-9b92-2ccc1086d5a5)
+![register page](https://github.com/user-attachments/assets/c222457b-b1b2-431a-a15d-7d15eb66abc7)
+![admin panel](https://github.com/user-attachments/assets/7092a104-2809-41b7-b94c-06482cf36582)
+![cart page](https://github.com/user-attachments/assets/bd86dbc0-057a-4f50-b652-ac8daf8209c1)
